@@ -20,6 +20,43 @@ body {
     text-align: center;
 }
 
+.Board 
+{
+    display:flex;
+    flex-direction: column;
+}
+
+.row
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.Board 
+{
+    display: inline;
+}
+
+.Board > row:nth-child(2)
+{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.Board > .row > .cell:nth-child(2)
+{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.cell 
+{
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+    text-align: center;
+}
+
 #grid {
     display: grid;
     grid-template-columns: 100px 100px 100px;
